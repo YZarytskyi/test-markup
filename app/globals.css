@@ -30,3 +30,7 @@ body {
   border-radius: 50%;
   border: 0.125rem solid #02ba95;
 }
+
+.errorMessage {
+  @apply ml-[0.3125rem] text-[0.75rem] leading-[1] text-red-500;
+}
