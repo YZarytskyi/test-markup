@@ -64,7 +64,7 @@ export const FooterForm = () => {
       validationSchema={schema}
       onSubmit={onSubmit}
     >
-      <Form className="flex w-1/2 justify-between gap-[2rem]">
+      <Form className="flex w-full flex-col justify-between gap-[2rem] md:w-1/2 md:flex-row">
         <div className="flex w-full max-w-[23rem] flex-col gap-[0.75rem]">
           <div>
             <Field
@@ -123,7 +123,7 @@ export const FooterForm = () => {
           </ErrorMessage>
         </div>
 
-        <div className="flex h-full flex-col items-center justify-between">
+        <div className="flex h-full flex-shrink-0 flex-row-reverse items-center justify-between gap-[2rem] md:flex-col">
           <div className="flex h-[6.75rem] w-[6.75rem] items-center justify-center rounded-full bg-gradient-to-l from-[#142F28] to-[rgba(52,57,57,0.8)]">
             <div className="bg-accent flex h-[5.5625rem] w-[5.5625rem] items-center justify-center rounded-full">
               <Image src="/images/user.png" alt="User" width={79} height={79} />
@@ -131,7 +131,7 @@ export const FooterForm = () => {
           </div>
           <button
             type="submit"
-            className="border-accent hover: hover:bg-accent active:bg-accent rounded-[6.25rem] border-[0.25rem] px-[1.66rem] py-[0.88rem] font-bold transition-colors hover:bg-opacity-15 active:bg-opacity-25"
+            className="border-accent hover:bg-accent active:bg-accent rounded-[6.25rem] border-[0.25rem] px-[1.66rem] py-[0.88rem] font-bold transition-colors hover:bg-opacity-15 active:bg-opacity-25"
           >
             Submit
           </button>

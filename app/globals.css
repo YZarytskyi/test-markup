@@ -31,6 +31,14 @@ body {
   border: 0.125rem solid #02ba95;
 }
 
+.cardBackground {
+  background: linear-gradient(
+    90deg,
+    rgba(2, 186, 149, 1) 0%,
+    rgba(52, 57, 55, 1) 50%
+  );
+}
+
 .errorMessage {
   @apply ml-[0.3125rem] text-[0.75rem] leading-[1] text-red-500;
 }
