@@ -9,3 +9,24 @@ body {
 .sectionContainer {
   @apply mx-auto w-full max-w-[90rem] px-4 sm:px-6 lg:px-[8.4375rem];
 }
+
+.partnerItem {
+  position: relative;
+  display: flex;
+  height: 23.125rem;
+  width: 14.625rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.partnerItem::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  height: 23.125rem;
+  width: 23.125rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 0.125rem solid #02ba95;
+}
