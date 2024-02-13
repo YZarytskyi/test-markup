@@ -54,7 +54,7 @@ export const Partners = () => {
       <Marquee autoFill={true} className="mb-[3rem] md:mb-[3.75rem]">
         <ul className="flex gap-[3.75rem] pl-[3.75rem]">
           {data.partners.map(({ icon, ...restImageProps }) => (
-            <li className="partnerItem">
+            <li key={icon} className="partnerItem">
               <Image src={icon} {...restImageProps} />
             </li>
           ))}

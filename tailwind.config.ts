@@ -13,6 +13,7 @@ const config: Config = {
       },
       colors: {
         bgMain: "#050505",
+        accentDark: "#767676",
         accent: "#02BA95",
         accentLight: "#00FFA3",
       },
