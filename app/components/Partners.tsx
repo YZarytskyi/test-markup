@@ -47,7 +47,7 @@ const data = {
 
 export const Partners = () => {
   return (
-    <section className="flex flex-col items-center py-[10rem]">
+    <section className="flex flex-col items-center py-[3.75rem]">
       <h2 className="sectionContainer mb-[3rem] text-center text-[1.5rem] font-bold leading-[1.15] md:mb-[3.75rem] md:text-[2rem] lg:text-[2.5rem]">
         {data.heading}
       </h2>

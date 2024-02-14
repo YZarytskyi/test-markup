@@ -60,12 +60,12 @@ export const ResearchCardList = () => {
               index === arr.length - 1 && "md:mr-[5vw]",
             )}
           >
-            <div className="border-accent max-w-[30.125rem] rounded-[0.625rem] border-2 bg-gradient-to-r from-[#142F28] to-[rgba(52,57,57,0.38)] px-[1.813rem] py-[0.875rem] md:max-w-[40.125rem] lg:max-w-[48.125rem] lg:px-[2.813rem] lg:py-[1.875rem]">
-              <p className="text-accentLight mb-[1.25rem] text-center text-[1rem] font-[500] italic leading-[1.15] lg:text-[1.12rem]">
+            <div className="max-w-[30.125rem] rounded-[0.625rem] border-2 border-accent bg-gradient-to-r from-[#142F28] to-[rgba(52,57,57,0.38)] px-[1.813rem] py-[0.875rem] md:max-w-[40.125rem] lg:max-w-[48.125rem] lg:px-[2.813rem] lg:py-[1.875rem]">
+              <p className="mb-[1.25rem] text-center text-[1rem] font-[500] italic leading-[1.15] text-accentLight lg:text-[1.12rem]">
                 {card.inscription}
               </p>
               <div className=" mb-[3.75rem] flex items-center justify-between md:mb-[5.5rem] lg:mb-[7.5rem]">
-                <p className=" text-accentLight text-[1.5rem] font-bold italic leading-[1.15] md:text-[2rem] lg:text-[2.5rem]">
+                <p className=" text-[1.5rem] font-bold italic leading-[1.15] text-accentLight md:text-[2rem] lg:text-[2.5rem]">
                   {card.tools}
                 </p>
                 <p className="text-[1.5rem] font-bold leading-[1.15] md:text-[2rem] lg:text-[2.5rem]">
@@ -79,10 +79,11 @@ export const ResearchCardList = () => {
           </SwiperSlide>
         ))}
       </Swiper>
+
       <div className="flex justify-center gap-[0.938rem]">
         <button
           onClick={() => onSlideChange(activeIndex - 1)}
-          className="border-accent hover:bg-accent active:bg-accent flex h-[2.5rem] w-[2.5rem] items-center justify-center rounded-full border-2 hover:bg-opacity-15 active:bg-opacity-25"
+          className="flex h-[2.5rem] w-[2.5rem] items-center justify-center rounded-full border-2 border-accent hover:bg-accent hover:bg-opacity-15 active:bg-accent active:bg-opacity-25"
         >
           <Image
             src="/images/arrowLeft.png"
@@ -93,7 +94,7 @@ export const ResearchCardList = () => {
         </button>
         <button
           onClick={() => onSlideChange(activeIndex + 1)}
-          className="border-accent hover:bg-accent active:bg-accent flex h-[2.5rem] w-[2.5rem] items-center justify-center rounded-full border-2 hover:bg-opacity-15 active:bg-opacity-25"
+          className="flex h-[2.5rem] w-[2.5rem] items-center justify-center rounded-full border-2 border-accent hover:bg-accent hover:bg-opacity-15 active:bg-accent active:bg-opacity-25"
         >
           <Image
             src="/images/arrowLeft.png"
